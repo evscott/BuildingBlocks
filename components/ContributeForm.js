@@ -1,14 +1,28 @@
 import React, { Component } from "react";
-import { Form, Input, Message } from "semantic-ui-react";
+import { Form, Input, Message, Button } from "semantic-ui-react";
 
 class ContributeForm extends Component {
+	state = {
+		value: ""
+	};
+
+	onSubmit = event => {
+		event.preventDefault();
+	};
+
 	render() {
 		return (
-			<Form>
+			<Form onSubmit={this.onSubmit}>
 				<Form.Field>
 					<label>Amount to Contribute</label>
-					<Input />
+					<Input
+						value={this.state.vaue}
+						onChange={event => this.setState({ value: event.target.value })}
+						label="ether"
+						labelPosition="right"
+					/>
 				</Form.Field>
+				<Button primary>Contribute!</Button>
 			</Form>
 		);
 	}
