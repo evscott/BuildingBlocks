@@ -10,14 +10,14 @@ Campaign creators are required to make individual requests for funds that are ne
 
 ## Deployment process
 
-###Ensure that Metamask is installed in your web browser.
-###Ensure that npm is installed on your computer.
+### Ensure that Metamask is installed in your web browser.
+### Ensure that npm is installed on your computer.
 
 To deploy your own campaign, first clone this repo which already contains all the necessary dependencies.
 
 Depending on whether you intend to deploy onto the Ethereum live network, or a test network, edit line 11 in /buildingblocks/ethereum/web3.js to match that network.
 
-###If unfamiliar with how to get an network address key -
+### If unfamiliar with how to get an network address key -
 Visit https://infura.io/ to claim yours for free.
 
 Enter the ethereum directory of building blocks through your terminal and enter:
@@ -36,4 +36,4 @@ $ npm run test
 
 All test cases can be found in /buildingblocks/test/Campaign.test.js
 
-#Currently, this application is still in development and is recommended against being deployed on the live network.
+# Currently, this application is still in development and is recommended against being deployed on the live network.
